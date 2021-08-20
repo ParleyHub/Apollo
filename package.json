@@ -12,7 +12,7 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx",
     "format": "prettier --write .",
-    "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
+    "test": "yarn check-format && yarn check-lint && yarn check-types",
     "prepare": "husky install"
   },
   "dependencies": {
