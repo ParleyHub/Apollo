@@ -5,10 +5,6 @@ on:
     branches:
       - 'master'
 
-  pull_request:
-    branches:
-      - 'master'
-
 permissions:
   contents: read
 
@@ -51,7 +47,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: ${{ secrets.DOCKERHUB_REPOSITORY }}
-          tags: type=semver,pattern={{version}}
+          tags: type=pep440,pattern={{version}}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Log into DockerHub
