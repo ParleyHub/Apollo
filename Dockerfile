@@ -22,7 +22,7 @@ COPY package.json yarn.lock ${APP}
 
 RUN yarn install --production --frozen-lockfile
 
-COPY --from=builder ${APP}/dist ${APP}
+COPY --from=builder ${APP}/.next ${APP}
 
 EXPOSE 3000
 
