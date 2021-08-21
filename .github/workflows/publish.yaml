@@ -34,7 +34,13 @@ jobs:
           script: |
             return context.payload.ref.replace('refs/tags/', '');
 
-      - name: Echo
+      - name: Echo 1
+        run: echo context.payload.ref
+
+      - name: Echo 2
+        run: echo context.payload.ref.replace('refs/tags/', '')
+
+      - name: Echo 3
         run: echo ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.result}}
 
       # - name: Log into DockerHub
