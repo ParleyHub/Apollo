@@ -15,6 +15,7 @@ RUN yarn build
 FROM node:16.6.1-alpine
 
 ENV APP=/app
+ENV BUILD=/app/.next
 
 WORKDIR ${APP}
 
@@ -22,7 +23,7 @@ COPY package.json yarn.lock ${APP}
 
 RUN yarn install --production --frozen-lockfile
 
-COPY --from=builder ${APP}/.next ${APP}
+COPY --from=builder ${BUILD} ${BUILD}
 
 EXPOSE 3000
 
