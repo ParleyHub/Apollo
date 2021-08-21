@@ -40,9 +40,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Echo Tag
-        run: echo ${{ steps.meta.outputs.tags }}
-
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
