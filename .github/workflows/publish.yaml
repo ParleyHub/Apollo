@@ -32,9 +32,12 @@ jobs:
         with:
           github-token: ${{ secrets.PATNAME }}
           script: |
-            return context.payload.ref/refs\/tags\//;
+            return context.payload.ref.replace('refs/tags/', '');
 
       - name: Echo 1
+        run: echo ${{steps.tag.outputs.result}}
+
+      - name: Echo 2
         run: echo ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.result}}
 
       # - name: Log into DockerHub
