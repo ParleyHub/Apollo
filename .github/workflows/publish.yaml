@@ -26,19 +26,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Get Tag Name
+      - name: Get Tag Number
         id: tag
-        uses: actions/github-script@v4
-        with:
-          github-token: ${{ secrets.PATNAME }}
-          script: |
-            return context.payload.ref.replace('refs/tags/', '');
+        run: echo ::set-output name=number::${github.ref/refs\/tags\//}
 
       - name: Echo 1
-        run: echo ${{steps.tag.outputs.result}}
+        run: echo ${{steps.tag.outputs.number}}
 
       - name: Echo 2
-        run: echo ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.result}}
+        run: echo ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}
 
       # - name: Log into DockerHub
       #   uses: docker/login-action@v1
@@ -52,4 +48,4 @@ jobs:
       #   with:
       #     context: .
       #     push: true
-      #     tags: '${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.result}}'
+      #     tags: '${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}'
