@@ -22,12 +22,12 @@ jobs:
       - run: yarn test
 
   bump:
+    if: github.ref == 'refs/heads/master'
     needs: test
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
-    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Checkout Repository
@@ -36,6 +36,6 @@ jobs:
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.26.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PATNAME }}
           WITH_V: false
           DEFAULT_BUMP: patch

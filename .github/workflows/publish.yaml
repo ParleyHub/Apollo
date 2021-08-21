@@ -1,15 +1,15 @@
 name: Publish
 
 on:
-  create:
+  push:
     tags:
-      - '*'
+      - '*.*.*'
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,7 +25,7 @@ jobs:
         with:
           images: ${{ secrets.DOCKERHUB_REPOSITORY }}
           tags: type=pep440,pattern={{version}}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PATNAME }}
 
       - name: Log into DockerHub
         uses: docker/login-action@v1
