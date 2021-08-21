@@ -8,8 +8,15 @@ on:
 permissions:
   contents: read
 
+env:
+  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
+  GKE_CLUSTER: jupiter
+  GKE_ZONE: asia-east2-c
+  DEPLOYMENT_NAME: jupiter
+  IMAGE: static-site
+
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,7 +43,8 @@ jobs:
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
+        run: echo ${{ steps.meta.outputs.tags }}
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_REPOSITORY }}:0.0.1
+          tags: ${{ secrets.DOCKERHUB_REPOSITORY }}:${{ steps.meta.outputs.tags }}
