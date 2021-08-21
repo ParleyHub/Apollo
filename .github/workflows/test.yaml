@@ -1,6 +1,15 @@
 name: Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - 'master'
+    tags-ignore:
+      - '*.*.*'
+
+  pull_request:
+    branches:
+      - 'master'
 
 permissions:
   contents: read
@@ -10,9 +19,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo Ref
-        run: echo ${{github.ref}}
-
       - name: Checkout Repository
         uses: actions/checkout@v2
 
