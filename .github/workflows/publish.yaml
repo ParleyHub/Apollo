@@ -28,7 +28,7 @@ jobs:
 
       - name: Get Tag Number
         id: tag
-        run: echo ::set-output name=number::${github.ref/refs\/tags\//}
+        run: echo ::set-output name=number::${GITHUB_REF/refs\/tags\//}
 
       - name: Echo 1
         run: echo ${{steps.tag.outputs.number}}
