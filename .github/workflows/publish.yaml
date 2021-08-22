@@ -10,9 +10,9 @@ permissions:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: jupiter
+  GKE_CLUSTER: parley-hub
   GKE_ZONE: asia-east2-c
-  DEPLOYMENT_NAME: jupiter
+  DEPLOYMENT_NAME: apollo
   IMAGE: static-site
 
 jobs:
