@@ -1,6 +1,6 @@
 FROM node:16.6.1-alpine as builder
 
-ENV APP=/app
+ENV APP=/app/
 
 WORKDIR ${APP}
 
@@ -14,7 +14,7 @@ RUN yarn build
 
 FROM node:16.6.1-alpine
 
-ENV APP=/app
+ENV APP=/app/
 ENV BUILD=/app/.next
 
 WORKDIR ${APP}
