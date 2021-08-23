@@ -25,7 +25,7 @@ jobs:
 
       - name: GCR
         run: |
-          gcloud auth configure-docker && Y
+          yes | gcloud auth configure-docker
           docker build -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}} .
           docker push asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
 
