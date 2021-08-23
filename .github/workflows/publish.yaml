@@ -65,5 +65,5 @@ jobs:
       - name: Connect to gcloud
         run: gcloud container clusters get-credentials parleyhub --region asia-east2 --project parleyhub-323409
 
-      - name: Echo root
-        run: echo $HOME && ls
+      - name: Apply config
+        run: kubectl apply -f k8s/config.yaml
