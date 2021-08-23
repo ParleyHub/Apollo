@@ -1,7 +1,10 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
+
+import logo from '../assets/images/icons/neural.svg';
 
 import AuthLayout from '../layouts/auth';
 
@@ -63,7 +66,7 @@ const HomeTemplate = (): ReactElement => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src="/neural.svg" alt="Neural Logo" />
+            <Image src={logo} width={64} height={64} alt="Logo" />
           </span>
         </a>
       </footer>
