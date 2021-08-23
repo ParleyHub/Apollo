@@ -62,11 +62,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Use gcloud CLI
-        run: gcloud info
+      - name: Get Tag Number
+        id: tag
+        run: echo ::set-output name=number::${GITHUB_REF/refs\/tags\//}
 
-      - name: Connect to gcloud
-        run: gcloud container clusters get-credentials parleyhub --region asia-east2 --project parleyhub-323409
-
-      - name: Apply config
-        run: kubectl apply -f k8s/config.yaml
+      - name: Deploy
+        run: cd k8s && bash deploy.sh
+        env:
+          IMAGE_TAG: ${{steps.tag.outputs.number}}
