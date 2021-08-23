@@ -45,6 +45,7 @@ jobs:
           tags: '${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}'
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -60,3 +61,6 @@ jobs:
 
       - name: Use gcloud CLI
         run: gcloud info
+
+      - name: Get Nodes
+        run: kubectl get nodes
