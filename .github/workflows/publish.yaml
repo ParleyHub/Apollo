@@ -69,4 +69,6 @@ jobs:
       - name: Deploy
         run: cd k8s && bash deploy.sh
         env:
-          IMAGE_TAG: ${{steps.tag.outputs.number}}
+          IMAGE_TAG: ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}
+          NAME_CI: apollo
+          DOMAIN: parley-hub.com
