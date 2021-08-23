@@ -65,5 +65,5 @@ jobs:
       - name: Connect to gcloud
         run: gcloud container clusters get-credentials parleyhub --region asia-east2 --project parleyhub-323409
 
-      - name: Get Nodes
-        run: kubectl get nodes
+      - name: Echo root
+        run: echo $HOME && ls
