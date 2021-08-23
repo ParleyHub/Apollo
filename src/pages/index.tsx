@@ -64,7 +64,7 @@ const HomeTemplate = (): ReactElement => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by Parley Hub{' '}
           <span className={styles.logo}>
             <Image src={logo} width={64} height={64} alt="Logo" />
           </span>
