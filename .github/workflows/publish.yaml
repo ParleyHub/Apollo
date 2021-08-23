@@ -36,7 +36,7 @@ jobs:
           registry: asia.gcr.io
           project_id: ${{ secrets.GKE_PROJECT }}
           image_name: apollo
-          image_tag: ${{ steps.get_tag_name.outputs.GIT_TAG_NAME}}
+          image_tag: ${{steps.tag.outputs.number}}
 
       - name: Build and push
         id: docker_build
