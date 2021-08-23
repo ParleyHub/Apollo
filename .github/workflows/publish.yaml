@@ -16,6 +16,13 @@ jobs:
       packages: write
 
     steps:
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.GKE_PROJECT }}
+          service_account_key: ${{ secrets.GKE_SA_KEY }}
+          export_default_credentials: true
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
@@ -25,8 +32,8 @@ jobs:
 
       - name: GCR
         run: |
-          gcloud auth configure-docker
           docker build -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}} .
+          gcloud auth configure-docker
           docker push asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
 
   deploy:
