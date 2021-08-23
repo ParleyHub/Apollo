@@ -29,15 +29,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: GCR
-        uses: RafikFarhad/push-to-gcr-github-action@v3.0.2
-        with:
-          gcloud_service_key: ${{ secrets.GCLOUD_SERVICE_KEY }}
-          registry: asia.gcr.io
-          project_id: ${{ secrets.GKE_PROJECT }}
-          image_name: apollo
-          image_tag: ${{steps.tag.outputs.number}}
-
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
@@ -45,6 +36,12 @@ jobs:
           context: .
           push: true
           tags: '${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}'
+
+      - name: GCR
+        run: |
+          gcloud auth configure-docker
+          docker build -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}} .
+          docker push -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
 
   deploy:
     needs: build
