@@ -8,13 +8,6 @@ on:
 permissions:
   contents: read
 
-env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: parley-hub
-  GKE_ZONE: asia-east2-c
-  DEPLOYMENT_NAME: apollo
-  IMAGE: static-site
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,6 +28,15 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: GCR
+        uses: RafikFarhad/push-to-gcr-github-action@v3.0.2
+        with:
+          gcloud_service_key: ${{ secrets.GCLOUD_SERVICE_KEY }}
+          registry: asia.gcr.io
+          project_id: ${{ secrets.GKE_PROJECT }}
+          image_name: apollo
+          image_tag: ${{ steps.get_tag_name.outputs.GIT_TAG_NAME}}
 
       - name: Build and push
         id: docker_build

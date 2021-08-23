@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
         />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
-        <title>Next.js PWA Example</title>
+        <title>Welcome to Parley Hub</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
