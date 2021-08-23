@@ -23,25 +23,11 @@ jobs:
         id: tag
         run: echo ::set-output name=number::${GITHUB_REF/refs\/tags\//}
 
-      - name: Log into DockerHub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build and push
-        id: docker_build
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: '${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}'
-
       - name: GCR
         run: |
           gcloud auth configure-docker
           docker build -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}} .
-          docker push -t asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
+          docker push asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
 
   deploy:
     needs: build
@@ -68,6 +54,6 @@ jobs:
       - name: Deploy
         run: cd k8s && bash deploy.sh
         env:
-          IMAGE_TAG: ${{ secrets.DOCKERHUB_REPOSITORY }}:${{steps.tag.outputs.number}}
+          IMAGE_TAG: asia.gcr.io/${{secrets.GKE_PROJECT}}/apollo:${{steps.tag.outputs.number}}
           NAME_CI: apollo
           DOMAIN: parley-hub.com
