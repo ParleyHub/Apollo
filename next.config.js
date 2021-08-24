@@ -8,6 +8,5 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     runtimeCaching,
-  },
-  compress: true,
+  }
 });
