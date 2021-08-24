@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css';
 
 import AuthLayout from '../layouts/auth';
 
+import logo from '@/public/icons/logo.png';
+
 const HomeTemplate = (): ReactElement => {
   return (
     <div className={styles.container}>
@@ -60,7 +62,7 @@ const HomeTemplate = (): ReactElement => {
         <a href="#" target="_blank" rel="noopener noreferrer">
           Powered by Parley Hub{' '}
           <span className={styles.logo}>
-            <Image src="/icons/logo.png" width={64} height={64} alt="Logo" />
+            <Image src={logo} width={64} height={64} alt="Logo" />
           </span>
         </a>
       </footer>
