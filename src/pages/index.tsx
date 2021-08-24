@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 
 import AuthLayout from '../layouts/auth';
 
-import logo from '@/public/icons/logo.png';
+import logo from '@/public/static/icons/logo.png';
 
 const HomeTemplate = (): ReactElement => {
   return (
