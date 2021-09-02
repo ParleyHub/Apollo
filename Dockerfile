@@ -25,6 +25,8 @@ RUN yarn install --production --frozen-lockfile
 
 COPY --from=builder ${BUILD} ${BUILD}
 
+COPY public/ ${APP}public/
+
 EXPOSE 3000
 
 CMD ["yarn", "start"]
