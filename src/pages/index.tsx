@@ -1,12 +1,9 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
 
 import AuthLayout from '../layouts/auth';
-
-import logo from '@/public/static/icons/logo.png';
 
 const HomeTemplate = (): ReactElement => {
   return (
@@ -60,10 +57,7 @@ const HomeTemplate = (): ReactElement => {
 
       <footer className={styles.footer}>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          Powered by Parley Hub{' '}
-          <span className={styles.logo}>
-            <Image src={logo} width={64} height={64} alt="Logo" />
-          </span>
+          Powered by Parley Hub
         </a>
       </footer>
     </div>
