@@ -60,7 +60,7 @@ spec:
   tls:
     - hosts:
         - $DOMAIN
-      secretName: apollo-secret-tls
+      secretName: apollo-tls-secret
   rules:
     - host: $DOMAIN
       http:
