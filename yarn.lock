@@ -206,6 +206,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@parley-hub/grace@^1.0.0":
+  version "1.0.0"
+  resolved "https://asia-npm.pkg.dev/parley-hub-project/grace/@parley-hub/grace/-/@parley-hub/grace-1.0.0.tgz#4a74ffbc1135cbf31a3ca2eb62eed71fae67e99f"
+  integrity sha512-QJfmQphUZ4U63lugwLfpb6C+cJ1Zk7VkxuFbzGT8/HH8GEBmrSbBVsrkdv4df1YKvEN+WmcjJ+cbKnLCAF0Otg==
+
 "@rushstack/eslint-patch@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"

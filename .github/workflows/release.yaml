@@ -16,6 +16,9 @@ jobs:
       packages: write
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@master
         with:
@@ -23,8 +26,10 @@ jobs:
           service_account_key: ${{ secrets.GKE_SA_KEY }}
           export_default_credentials: true
 
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Get GCloud Artifact Authentication
+        run: |
+          echo ${{ secrets.NPM_REGISTRY }} >> .npmrc
+          npx google-artifactregistry-auth .npmrc
 
       - name: Get Tag Number
         id: tag

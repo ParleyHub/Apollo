@@ -1,8 +1,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
-
-import '../styles/globals.css';
+import '@parley-hub/grace/lib/main.css';
 
 const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return (
