@@ -7,6 +7,12 @@ interface PropType {
 const GuessLayout = ({ Component }: PropType): ReactElement => {
   return (
     <div className="bg-white">
+      <header>
+        <div className="container mx-auto">
+          <img src="/assets/images/logo.png" alt="" />
+        </div>
+      </header>
+
       <Component />
     </div>
   );
