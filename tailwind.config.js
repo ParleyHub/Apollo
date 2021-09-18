@@ -1,8 +1,14 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
-  mode: 'jit',
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '0.5rem',
+      },
+    },
     colors: {
       black: '#000',
       white: '#fff',
@@ -76,6 +82,9 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+      },
+      colors: {
+        'lightest-gray': '#f9fafb',
       },
     },
   },

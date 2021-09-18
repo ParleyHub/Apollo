@@ -32,6 +32,7 @@
     "husky": "^7.0.1",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
+    "sass": "^1.41.1",
     "stylelint-config-prettier": "^8.0.2",
     "tailwindcss": "^2.2.7",
     "tslint-config-prettier": "^1.18.0",

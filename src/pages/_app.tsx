@@ -3,6 +3,8 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import '@parley-hub/grace/lib/main.css';
 
+import '../styles/styles.scss';
+
 const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return (
     <>
@@ -15,6 +17,7 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
         />
         <meta name="description" content="Description" />
         <link rel="icon" href="/favicon.ico" />
+
         <title>Welcome to Parley Hub</title>
       </Head>
 
