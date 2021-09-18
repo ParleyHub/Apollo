@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 
-import AuthLayout from '../../layouts/auth';
+import GuessLayout from '../../layouts/guess';
 
 const SignInTemplate = (): ReactElement => {
   return (
@@ -19,7 +19,7 @@ const SignInTemplate = (): ReactElement => {
 };
 
 const SignInPage = (): ReactElement => {
-  return <AuthLayout Component={SignInTemplate} />;
+  return <GuessLayout Component={SignInTemplate} />;
 };
 
 export default SignInPage;

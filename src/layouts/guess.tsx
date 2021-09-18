@@ -2,14 +2,14 @@ import { ReactElement, FC } from 'react';
 
 import HeaderComponent from '../components/header';
 
-interface PropType {
+interface IPropType {
   Component: FC;
 }
 
-const GuessLayout = ({ Component }: PropType): ReactElement => {
+const GuessLayout = ({ Component }: IPropType): ReactElement => {
   return (
     <div className="bg-lightest-gray">
-      <HeaderComponent auth={true} />
+      <HeaderComponent auth={false} />
 
       <Component />
     </div>
