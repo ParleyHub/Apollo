@@ -1,12 +1,16 @@
 import { ReactElement, FC } from 'react';
 
-interface PropType {
+import HeaderComponent from '../components/header';
+
+interface IPropType {
   Component: FC;
 }
 
-const AuthLayout = ({ Component }: PropType): ReactElement => {
+const AuthLayout = ({ Component }: IPropType): ReactElement => {
   return (
-    <div className="bg-white">
+    <div className="bg-lightest-gray">
+      <HeaderComponent auth={true} />
+
       <Component />
     </div>
   );
