@@ -1,6 +1,16 @@
 import { ReactElement } from 'react';
+import Image from 'next/image';
 
 import GuessLayout from '../layouts/guess';
+
+import image01 from '../../public/assets/images/home/image-01.jpeg';
+import image02 from '../../public/assets/images/home/image-02.jpeg';
+import image03 from '../../public/assets/images/home/image-03.jpeg';
+import image04 from '../../public/assets/images/home/image-04.jpeg';
+import image05 from '../../public/assets/images/home/image-05.jpeg';
+import image06 from '../../public/assets/images/home/image-06.jpeg';
+import image07 from '../../public/assets/images/home/image-07.jpeg';
+import image08 from '../../public/assets/images/home/image-08.jpeg';
 
 const HomeTemplate = (): ReactElement => {
   return (
@@ -8,11 +18,12 @@ const HomeTemplate = (): ReactElement => {
       <div className="bg-gray-100 py-10 md:py-0">
         <div className="container">
           <div className="md:grid md:grid-cols-2 md:gap-12">
-            <div className="mb-4 md:order-2 md:mb-0">
-              <img
-                src="https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                alt=""
-                className="rounded-md md:rounded-none"
+            <div className="mb-4 rounded-md md:rounded-none md:order-2 md:mb-0">
+              <Image
+                src={image01}
+                alt="Image 01"
+                objectFit="cover"
+                layout="responsive"
               />
             </div>
 
@@ -34,27 +45,33 @@ const HomeTemplate = (): ReactElement => {
           <div className="md:grid md:grid-cols-2 md:gap-12">
             <div className="mb-8 md:order-2 md:mb-0">
               <div className="grid grid-rows-2 grid-cols-12 gap-4">
-                <div className="col-span-7 row-span-2">
-                  <img
-                    src="https://images.pexels.com/photos/3205403/pexels-photo-3205403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt=""
-                    className="object-cover rounded-md"
+                <div className="col-span-7 row-span-2 relative">
+                  <Image
+                    src={image02}
+                    alt="Image 02"
+                    className="rounded-md"
+                    objectFit="cover"
+                    layout="responsive"
                   />
                 </div>
 
-                <div className="col-span-5 row-span-1">
-                  <img
-                    src="https://images.pexels.com/photos/5700184/pexels-photo-5700184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt=""
-                    className="object-cover h-full rounded-md"
+                <div className="col-span-5 row-span-1 relative">
+                  <Image
+                    src={image03}
+                    alt="Image 03"
+                    className="rounded-md"
+                    objectFit="cover"
+                    layout="fill"
                   />
                 </div>
 
-                <div className="col-span-5 row-span-1">
-                  <img
-                    src="https://images.pexels.com/photos/4492161/pexels-photo-4492161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt=""
-                    className="object-cover h-full rounded-md"
+                <div className="col-span-5 row-span-1 relative">
+                  <Image
+                    src={image04}
+                    alt="Image 04"
+                    className="rounded-md"
+                    objectFit="cover"
+                    layout="fill"
                   />
                 </div>
               </div>
@@ -142,35 +159,39 @@ const HomeTemplate = (): ReactElement => {
 
       <div className="bg-white">
         <div className="grid grid-cols-12 grid-rows-2">
-          <div className="col-span-12 sm:col-span-6 sm:row-span-2">
-            <img
-              src="https://images.pexels.com/photos/4492135/pexels-photo-4492135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
-              className="h-full object-cover"
+          <div className="relative col-span-12 sm:col-span-6 sm:row-span-2">
+            <Image
+              src={image05}
+              alt="Image 05"
+              objectFit="cover"
+              layout="fill"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3 row-span-1">
-            <img
-              src="https://images.pexels.com/photos/3783118/pexels-photo-3783118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
-              className="h-full object-cover"
+          <div className="relative col-span-6 sm:col-span-3 row-span-1">
+            <Image
+              src={image06}
+              alt="Image 06"
+              objectFit="cover"
+              layout="fill"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3 row-span-2">
-            <img
-              src="https://images.pexels.com/photos/4246228/pexels-photo-4246228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
-              className="h-full object-cover"
+          <div className="relative col-span-6 sm:col-span-3 row-span-2">
+            <Image
+              src={image07}
+              alt="Image 07"
+              objectFit="cover"
+              layout="responsive"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3 row-span-1">
-            <img
-              src="https://images.pexels.com/photos/3782181/pexels-photo-3782181.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
-              className="h-full object-cover"
+          <div className="relative col-span-6 sm:col-span-3 row-span-1">
+            <Image
+              src={image08}
+              alt="Image 08"
+              objectFit="cover"
+              layout="fill"
             />
           </div>
         </div>
