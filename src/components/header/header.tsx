@@ -12,7 +12,7 @@ const HeaderGuessComponent = () => {
 
   return (
     <>
-      <nav className="text-gray-600">
+      <nav className="text-gray-600 hidden md:flex">
         <a href="#" className="mx-4">
           Product
         </a>
@@ -46,9 +46,9 @@ const HeaderAuthComponent = () => (
 
 const HeaderComponent = ({ auth = false }: IHeaderProps): ReactElement => (
   <header className="py-4 shadow-sm bg-white">
-    <div className="container flex justify-between items-center">
+    <div className="container flex justify-between items-center flex-col md:flex-row">
       <Link href="/">
-        <a className="flex items-center">
+        <a className="flex items-center mb-4 md:mb-0">
           <img src="/assets/images/logo.png" alt="" className="w-10 mr-2" />
 
           <h1 className="text-xl text-gray-600">Parley Hub</h1>
