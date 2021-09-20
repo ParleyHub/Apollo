@@ -16,7 +16,7 @@ import image08 from '../../public/assets/images/home/image-08.jpeg';
 const HomeTemplate = (): ReactElement => {
   return (
     <>
-      <div className="bg-gray-100 py-10 md:py-0">
+      <div className="bg-lightest-gray py-10 md:py-0">
         <div className="container">
           <div className="md:grid md:grid-cols-2 md:gap-12">
             <div className="mb-4 rounded-md md:rounded-none md:order-2 md:mb-0">
@@ -105,7 +105,7 @@ const HomeTemplate = (): ReactElement => {
       </LazyLoad>
 
       <LazyLoad>
-        <div className="bg-gray-100 py-10 md:py-20">
+        <div className="bg-lightest-gray py-10 md:py-20">
           <div className="container">
             <div className="md:grid md:grid-cols-12 md:gap-4 mb-8">
               <div className="md:col-span-6">
@@ -121,7 +121,7 @@ const HomeTemplate = (): ReactElement => {
             </div>
 
             <div className="md:grid md:grid-rows-2 md:grid-cols-12 md:gap-4 items-center">
-              <div className="bg-white rounded-md mb-4 p-4 row-span-2 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-2 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium mb-2 text-gray-900">
                   Channels
                 </h4>
@@ -132,29 +132,29 @@ const HomeTemplate = (): ReactElement => {
                 </p>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium text-gray-900">Message</h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium text-gray-900">
                   Voice and video calls
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium text-gray-900">
                   Accessibility
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium text-gray-900">
                   File sharing
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3">
+              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
                 <h4 className="text-xl font-medium text-gray-900">Security</h4>
               </div>
             </div>

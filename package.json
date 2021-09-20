@@ -1,6 +1,6 @@
 {
-  "name": "apollo",
-  "version": "0.0.1",
+  "name": "@parley-hub/apollo",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "clean": "rm -rf .next",
@@ -16,7 +16,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@parley-hub/grace": "^1.0.3",
+    "@parley-hub/grace": "^1.0.4",
     "next": "11.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
