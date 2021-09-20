@@ -11,3 +11,7 @@ a {
     @apply text-blue-600;
   }
 }
+
+.full-screen {
+  height: calc(100vh - 128px);
+}
