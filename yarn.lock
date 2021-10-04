@@ -213,7 +213,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@parley-hub/grace@^1.0.3":
+"@parley-hub/grace@^1.0.4":
   version "1.0.4"
   resolved "https://asia-npm.pkg.dev/parley-hub-project/grace/@parley-hub/grace/-/@parley-hub/grace-1.0.4.tgz#91c86bdf9e762d36f1f168cee1dafc5b44161900"
   integrity sha512-DxpG4GBwFYbhgOYO1GoUtXd/1/LhNYG2q+8CuqKIZ6TIJH6SSIymHBzy13y740b6p7k0oAKeGpTivqcHg8GFxg==
