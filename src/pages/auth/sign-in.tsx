@@ -14,8 +14,8 @@ const SignInTemplate = (): ReactElement => {
 
       <main className="bg-gray-100 py-10 md:py-20 full-screen flex items-center">
         <div className="container">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-4 col-start-5">
+          <div className="md:grid md:grid-cols-12 md:gap-8">
+            <div className="md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-5">
               <Input
                 className="mb-4"
                 placeholder="Email"
