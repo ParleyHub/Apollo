@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Button, Input } from '@parley-hub/grace';
+import { ArrowDownIcon } from '@parley-hub/aeolus';
 
 interface IHeaderProps {
   auth: boolean;
@@ -40,7 +41,10 @@ const HeaderAuthComponent = () => (
   <div>
     <Input placeholder="Search" fullWidth />
 
-    <div className="flex text-gray-600">John Doe</div>
+    <div className="flex text-gray-600">
+      John Doe
+      <ArrowDownIcon variant="black" />
+    </div>
   </div>
 );
 
