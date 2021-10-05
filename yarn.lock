@@ -213,10 +213,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@parley-hub/aeolus@^1.0.0":
-  version "1.0.0"
-  resolved "https://asia-npm.pkg.dev/parley-hub-project/parley-hub/@parley-hub/aeolus/-/@parley-hub/aeolus-1.0.0.tgz#22d34e4ec6488aea8ddf17c5214f4540c629a223"
-  integrity sha512-n0+FJOlrdx24Dho/Eru70Z7hnkbbjjjnsUU9QGFVtOqQD1pEXX5IWmEjx081JUeeyQjteuqZGOccXRiQXYXZWg==
+"@parley-hub/aeolus@^1.0.2":
+  version "1.0.2"
+  resolved "https://asia-npm.pkg.dev/parley-hub-project/parley-hub/@parley-hub/aeolus/-/@parley-hub/aeolus-1.0.2.tgz#8b71f5f21bf7b7e05e9a7151cff73de6f934fa1b"
+  integrity sha512-r4/IaD36vhbv8TupzD71nIrf9cMWBhAS+SM8p07szSMYzYZ7ZXZhts4lR9zt+1M+StH0N4igx7IDlfEdWtCCmQ==
 
 "@parley-hub/grace@^1.0.0":
   version "1.0.0"

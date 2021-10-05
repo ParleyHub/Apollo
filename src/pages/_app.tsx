@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import '@parley-hub/grace/lib/main.css';
+import '@parley-hub/aeolus/lib/main.css';
 
 import '../styles/styles.scss';
 
