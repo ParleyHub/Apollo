@@ -13,10 +13,12 @@
     "check-lint": "eslint . --ext ts --ext tsx",
     "format": "prettier --write .",
     "test": "yarn check-format && yarn check-lint && yarn check-types",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gar": "npx google-artifactregistry-auth .npmrc"
   },
   "dependencies": {
-    "@parley-hub/grace": "^1.0.4",
+    "@parley-hub/aeolus": "^1.0.0",
+    "@parley-hub/grace": "^1.0.0",
     "next": "11.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
