@@ -37,11 +37,11 @@ const HeaderGuessComponent = () => {
 };
 
 const HeaderAuthComponent = () => (
-  <>
-    <Input placeholder="Search" />
+  <div>
+    <Input placeholder="Search" fullWidth />
 
     <div className="flex text-gray-600">John Doe</div>
-  </>
+  </div>
 );
 
 const HeaderComponent = ({ auth = false }: IHeaderProps): ReactElement => (
