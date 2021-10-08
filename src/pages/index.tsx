@@ -29,7 +29,7 @@ const HomeTemplate = (): ReactElement => {
             </div>
 
             <div className="flex flex-col justify-center md:order-1">
-              <h2 className="text-3xl lg:text-5xl text-blue-600 mb-2 md:mb-4">
+              <h2 className="text-3xl lg:text-5xl text-navy-300 mb-2 md:mb-4">
                 Parley Hub
               </h2>
 
@@ -80,7 +80,7 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="md:order-1">
-                <h2 className="text-3xl lg:text-4xl mb-6 text-gray-800">
+                <h2 className="text-3xl lg:text-4xl mb-6 text-navy-300">
                   Parley Hub is for everyone
                 </h2>
 
@@ -109,7 +109,7 @@ const HomeTemplate = (): ReactElement => {
           <div className="container">
             <div className="md:grid md:grid-cols-12 md:gap-4 mb-8">
               <div className="md:col-span-6">
-                <h2 className="text-3xl lg:text-4xl mb-4 text-gray-900">
+                <h2 className="text-3xl lg:text-4xl mb-4 text-navy-300">
                   Work more easily with everyone
                 </h2>
 
@@ -122,7 +122,7 @@ const HomeTemplate = (): ReactElement => {
 
             <div className="md:grid md:grid-rows-2 md:grid-cols-12 md:gap-4 items-center">
               <div className="bg-white rounded-md mb-4 p-4 row-span-2 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium mb-2 text-gray-900">
+                <h4 className="text-xl font-medium mb-2 text-navy-300">
                   Channels
                 </h4>
 
@@ -133,29 +133,29 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-gray-900">Message</h4>
+                <h4 className="text-xl font-medium text-navy-300">Message</h4>
               </div>
 
               <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-gray-900">
+                <h4 className="text-xl font-medium text-navy-300">
                   Voice and video calls
                 </h4>
               </div>
 
               <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-gray-900">
+                <h4 className="text-xl font-medium text-navy-300">
                   Accessibility
                 </h4>
               </div>
 
               <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-gray-900">
+                <h4 className="text-xl font-medium text-navy-300">
                   File sharing
                 </h4>
               </div>
 
               <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-gray-900">Security</h4>
+                <h4 className="text-xl font-medium text-navy-300">Security</h4>
               </div>
             </div>
           </div>
