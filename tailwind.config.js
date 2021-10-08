@@ -82,6 +82,9 @@ module.exports = {
         800: '#4a4a4a',
         900: '#383737',
       },
+      navy: {
+        300: '#14223e',
+      },
     },
     extend: {
       fontFamily: {

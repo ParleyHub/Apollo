@@ -12,8 +12,16 @@ const HeaderGuessComponent = () => {
   const router = useRouter();
 
   return (
-    <>
-      <nav className="text-gray-600 hidden md:flex">
+    <div className="container flex justify-between items-center flex-col md:flex-row">
+      <Link href="/">
+        <a className="flex items-center mb-4 md:mb-0">
+          <img src="/assets/images/logo.png" alt="" className="w-10 mr-2" />
+
+          <h1 className="text-xl text-white">Parley Hub</h1>
+        </a>
+      </Link>
+
+      <nav className="text-white hidden md:flex">
         <a href="#" className="mx-4">
           Product
         </a>
@@ -33,34 +41,27 @@ const HeaderGuessComponent = () => {
 
         <Button label="Login" onClick={() => router.push('/auth/sign-in')} />
       </div>
-    </>
+    </div>
   );
 };
 
 const HeaderAuthComponent = () => (
-  <div>
-    <Input placeholder="Search" fullWidth />
+  <div className="flex flex-1 justify-between px-4">
+    <Input placeholder="Search" fullWidth inputSize="small" />
 
-    <div className="flex text-gray-600">
+    <div className="flex text-white items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-600">
       John Doe
-      <ArrowDownIcon variant="black" />
+      <ArrowDownIcon
+        variant="default"
+        className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-600"
+      />
     </div>
   </div>
 );
 
 const HeaderComponent = ({ auth = false }: IHeaderProps): ReactElement => (
-  <header className="py-4 shadow-sm bg-white">
-    <div className="container flex justify-between items-center flex-col md:flex-row">
-      <Link href="/">
-        <a className="flex items-center mb-4 md:mb-0">
-          <img src="/assets/images/logo.png" alt="" className="w-10 mr-2" />
-
-          <h1 className="text-xl text-gray-600">Parley Hub</h1>
-        </a>
-      </Link>
-
-      {auth ? <HeaderAuthComponent /> : <HeaderGuessComponent />}
-    </div>
+  <header className="py-2 shadow-sm bg-navy-300">
+    {auth ? <HeaderAuthComponent /> : <HeaderGuessComponent />}
   </header>
 );
 
