@@ -16,7 +16,7 @@ import image08 from '../../public/assets/images/home/image-08.jpeg';
 const HomeTemplate = (): ReactElement => {
   return (
     <>
-      <div className="bg-lightest-gray py-10 md:py-0">
+      <div className="bg-white py-10 md:py-0">
         <div className="container">
           <div className="md:grid md:grid-cols-2 md:gap-12">
             <div className="mb-4 rounded-md md:rounded-none md:order-2 md:mb-0">
