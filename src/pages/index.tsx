@@ -19,12 +19,13 @@ const HomeTemplate = (): ReactElement => {
       <div className="bg-white py-10 md:py-0">
         <div className="container">
           <div className="md:grid md:grid-cols-2 md:gap-12">
-            <div className="mb-4 rounded-md md:rounded-none md:order-2 md:mb-0">
+            <div className="mb-4 md:order-2 md:mb-0">
               <Image
                 src={image01}
                 alt="Image 01"
                 objectFit="cover"
                 layout="responsive"
+                className="rounded-3xl"
               />
             </div>
 
@@ -51,7 +52,7 @@ const HomeTemplate = (): ReactElement => {
                     <Image
                       src={image02}
                       alt="Image 02"
-                      className="rounded-md"
+                      className="rounded-3xl"
                       objectFit="cover"
                       layout="responsive"
                     />
@@ -61,7 +62,7 @@ const HomeTemplate = (): ReactElement => {
                     <Image
                       src={image03}
                       alt="Image 03"
-                      className="rounded-md"
+                      className="rounded-3xl"
                       objectFit="cover"
                       layout="fill"
                     />
@@ -71,7 +72,7 @@ const HomeTemplate = (): ReactElement => {
                     <Image
                       src={image04}
                       alt="Image 04"
-                      className="rounded-md"
+                      className="rounded-3xl"
                       objectFit="cover"
                       layout="fill"
                     />
@@ -121,8 +122,8 @@ const HomeTemplate = (): ReactElement => {
             </div>
 
             <div className="md:grid md:grid-rows-2 md:grid-cols-12 md:gap-4 items-center">
-              <div className="bg-white rounded-md mb-4 p-4 row-span-2 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium mb-2 text-navy-300">
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-2 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 mb-2 text-navy-300">
                   Channels
                 </h4>
 
@@ -132,30 +133,34 @@ const HomeTemplate = (): ReactElement => {
                 </p>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-navy-300">Message</h4>
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 text-navy-300">
+                  Message
+                </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-navy-300">
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 text-navy-300">
                   Voice and video calls
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-navy-300">
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 text-navy-300">
                   Accessibility
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-navy-300">
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 text-navy-300">
                   File sharing
                 </h4>
               </div>
 
-              <div className="bg-white rounded-md mb-4 p-4 row-span-1 shadow-sm md:col-span-6 md:mb-0 lg:col-span-3">
-                <h4 className="text-xl font-medium text-navy-300">Security</h4>
+              <div className="group transition duration-300 ease-in-out bg-white rounded-xl border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-primary-600">
+                <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-primary-600 text-navy-300">
+                  Security
+                </h4>
               </div>
             </div>
           </div>
@@ -163,7 +168,7 @@ const HomeTemplate = (): ReactElement => {
       </LazyLoad>
 
       <LazyLoad>
-        <div className="bg-white">
+        <div className="bg-white mb-4">
           <div className="grid grid-cols-12 grid-rows-3 md:grid-rows-2">
             <div className="relative col-span-12 md:col-span-6 md:row-span-2 md:block">
               <Image
