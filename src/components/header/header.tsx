@@ -22,25 +22,27 @@ const HeaderGuessComponent = () => {
       </Link>
 
       <nav className="text-white hidden md:flex">
-        <a href="#" className="mx-4">
+        <a href="#" className="mx-4 hover:underline">
           Product
         </a>
 
-        <a href="#" className="mx-4">
+        <a href="#" className="mx-4 hover:underline">
           Features
         </a>
       </nav>
 
       <div className="flex">
         <span
-          className="text-white cursor-pointer"
+          className="text-white cursor-pointer hover:underline"
           onClick={() => router.push('/auth/sign-up')}
         >
           Sign up
         </span>
 
+        <span className="text-white mx-2">/</span>
+
         <span
-          className="text-white cursor-pointer ml-4"
+          className="text-white cursor-pointer hover:underline"
           onClick={() => router.push('/auth/sign-in')}
         >
           Login

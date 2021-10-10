@@ -6,10 +6,6 @@ body {
 
 a {
   @apply transition duration-300 ease-in-out;
-
-  &:hover {
-    @apply text-blue-600;
-  }
 }
 
 .full-screen {
