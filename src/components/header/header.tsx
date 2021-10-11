@@ -1,25 +1,32 @@
 import { ReactElement } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Input } from '@parley-hub/grace';
 import { ArrowDownIcon } from '@parley-hub/aeolus';
+
+import headerStyles from './header.module.scss';
 
 interface IHeaderProps {
   auth: boolean;
 }
 
+import logo from '../../../public/assets/images/logo.svg';
+
 const HeaderGuessComponent = () => {
   const router = useRouter();
-
-  console.log('router', router);
 
   return (
     <div className="container flex justify-between items-center flex-col md:flex-row">
       <Link href="/">
         <a className="flex items-center mb-4 md:mb-0">
-          <img src="/assets/images/logo.svg" alt="" className="w-10 mr-4" />
+          <div className={headerStyles.mainLogo}>
+            <Image src={logo} alt="Parley Hub" layout="responsive" />
+          </div>
 
-          <h1 className="text-xl text-gray-600 font-medium">Parley Hub</h1>
+          <h1 className="hidden text-xl text-primary-600 font-medium md:inline-block">
+            Parley Hub
+          </h1>
         </a>
       </Link>
 
