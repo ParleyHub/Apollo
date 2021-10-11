@@ -11,17 +11,19 @@ interface IHeaderProps {
 const HeaderGuessComponent = () => {
   const router = useRouter();
 
+  console.log('router', router);
+
   return (
     <div className="container flex justify-between items-center flex-col md:flex-row">
       <Link href="/">
         <a className="flex items-center mb-4 md:mb-0">
           <img src="/assets/images/logo.svg" alt="" className="w-10 mr-4" />
 
-          <h1 className="text-xl text-gray-600">Parley Hub</h1>
+          <h1 className="text-xl text-gray-600 font-medium">Parley Hub</h1>
         </a>
       </Link>
 
-      <nav className="text-gray-600 hidden md:flex">
+      <nav className="text-gray-600 hidden md:flex font-medium">
         <a href="#" className="mx-4 hover:underline">
           Product
         </a>
@@ -33,7 +35,9 @@ const HeaderGuessComponent = () => {
 
       <div className="flex">
         <span
-          className="text-gray-600 cursor-pointer hover:underline"
+          className={`text-gray-600 cursor-pointer hover:underline font-medium ${
+            router.pathname === '/auth/sign-up' ? 'text-primary-600' : ''
+          }`}
           onClick={() => router.push('/auth/sign-up')}
         >
           Sign up
@@ -42,7 +46,9 @@ const HeaderGuessComponent = () => {
         <span className="text-gray-600 mx-2">/</span>
 
         <span
-          className="text-gray-600 cursor-pointer hover:underline"
+          className={`text-gray-600 cursor-pointer hover:underline font-medium ${
+            router.pathname === '/auth/sign-in' ? 'text-primary-600' : ''
+          }`}
           onClick={() => router.push('/auth/sign-in')}
         >
           Login

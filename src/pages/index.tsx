@@ -16,8 +16,8 @@ const HomeTemplate = (): ReactElement => {
     <>
       <div className="py-10 md:py-20">
         <div className="container text-center">
-          <div className="grid grid-cols-12 gap-12 lg:gap-24">
-            <div className="col-span-12 lg:col-span-8 lg:col-start-3">
+          <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-24 mb-16">
+            <div className="lg:col-span-8 lg:col-start-3">
               <div className="mb-16">
                 <Image
                   src={image04}
@@ -42,8 +42,8 @@ const HomeTemplate = (): ReactElement => {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 gap-12">
-            <div className="col-span-6">
+          <div className="grid grid-cols-12 md:gap-12 lg:gap-24">
+            <div className="col-span-12 md:col-span-6">
               <Image
                 src={image04}
                 alt="Image 04"
@@ -52,7 +52,7 @@ const HomeTemplate = (): ReactElement => {
               />
             </div>
 
-            <div className="col-span-6">
+            <div className="col-span-12 md:col-span-6">
               <Image
                 src={image05}
                 alt="Image 05"
@@ -68,11 +68,11 @@ const HomeTemplate = (): ReactElement => {
         <div className="container">
           <div className="md:grid md:grid-cols-12 md:gap-4 mb-16">
             <div className="md:col-span-8 md:col-start-3 text-center">
-              <h2 className="text-4xl lg:text-4xl mb-4 text-navy-300 font-medium">
+              <h2 className="text-3xl lg:text-4xl mb-4 text-navy-300 font-medium">
                 Work more easily with everyone
               </h2>
 
-              <p className="text-lg lg:text-2xl text-gray-800">
+              <p className="text-base lg:text-2xl text-gray-800">
                 Stay on the same page and make decisions faster by bringing all
                 of your work communication into one place.
               </p>
@@ -127,8 +127,8 @@ const HomeTemplate = (): ReactElement => {
       <LazyLoad>
         <div className="py-10 md:py-20">
           <div className="container">
-            <div className="grid grid-cols-12 gap-12">
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 md:block">
+            <div className="grid grid-cols-12 md:gap-12">
+              <div className="relative col-span-12 mb-8 md:mb-0 md:col-span-6 md:row-span-2 md:block">
                 <Image
                   src={image01}
                   alt="Image 01"
@@ -138,11 +138,11 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center">
-                <h4 className="text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
                   Create an invite-only place where you belong
                 </h4>
 
-                <p className="text-lg lg:text-2xl text-gray-800">
+                <p className="text-base lg:text-2xl text-gray-800">
                   Parley Hub servers are organized into topic-based channels
                   where you can collaborate, share, and just talk about your day
                   without clogging up a group chat.
@@ -156,8 +156,8 @@ const HomeTemplate = (): ReactElement => {
       <LazyLoad>
         <div className="py-10 md:py-20">
           <div className="container">
-            <div className="grid grid-cols-12 gap-12">
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 lg:order-2">
+            <div className="grid grid-cols-12 md:gap-12">
+              <div className="relative col-span-12 mb-8 md:mb-0 md:col-span-6 md:row-span-2 lg:order-2">
                 <Image
                   src={image02}
                   alt="Image 02"
@@ -167,11 +167,11 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center lg:order-1">
-                <h4 className="text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
                   Where hanging out is easy
                 </h4>
 
-                <p className="text-lg lg:text-2xl text-gray-800">
+                <p className="text-base lg:text-2xl text-gray-800">
                   Grab a seat in a voice channel when you’re free. Friends in
                   your server can see you’re around and instantly pop in to talk
                   without having to call.
@@ -185,8 +185,8 @@ const HomeTemplate = (): ReactElement => {
       <LazyLoad>
         <div className="py-10 md:py-20">
           <div className="container">
-            <div className="grid grid-cols-12 gap-12">
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 md:block">
+            <div className="md:grid md:grid-cols-12 md:gap-12">
+              <div className="relative mb-8 md:mb-0 md:col-span-6 md:row-span-2 md:block">
                 <Image
                   src={image03}
                   alt="Image 03"
@@ -195,12 +195,12 @@ const HomeTemplate = (): ReactElement => {
                 />
               </div>
 
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center">
-                <h4 className="text-4xl mb-8 text-navy-300 font-medium">
+              <div className="relative md:col-span-6 md:row-span-2 flex flex-col justify-center">
+                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
                   From few to a fandom
                 </h4>
 
-                <p className="text-lg lg:text-2xl text-gray-800">
+                <p className="text-base lg:text-2xl text-gray-800">
                   Get any community running with moderation tools and custom
                   member access. Give members special powers, set up private
                   channels, and more.
@@ -216,11 +216,11 @@ const HomeTemplate = (): ReactElement => {
           <div className="container text-center">
             <div className="lg:grid lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-8 lg:col-start-3">
-                <h4 className="text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
                   Reliable tech for staying close
                 </h4>
 
-                <p className="text-lg lg:text-2xl text-gray-800 mb-16">
+                <p className="text-base lg:text-2xl text-gray-800 mb-16">
                   Low-latency voice and video feels like you’re in the same
                   room. Wave hello over video, watch friends stream their games,
                   or gather up and have a drawing session with screen share.
