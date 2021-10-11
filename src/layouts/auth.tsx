@@ -8,7 +8,7 @@ interface IPropType {
 
 const AuthLayout = ({ Component }: IPropType): ReactElement => {
   return (
-    <div className="bg-white p-4">
+    <div className="bg-gray-100">
       <HeaderComponent auth={true} />
 
       <Component />
