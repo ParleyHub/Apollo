@@ -14,10 +14,10 @@ import image07 from '../../public/assets/images/home/image-07.svg';
 const HomeTemplate = (): ReactElement => {
   return (
     <>
-      <div className="bg-white py-10 md:py-">
+      <div className="py-10 md:py-20">
         <div className="container text-center">
-          <div className="grid grid-cols-12 gap-24">
-            <div className="col-span-8 lg:col-start-3">
+          <div className="grid grid-cols-12 gap-12 lg:gap-24">
+            <div className="col-span-12 lg:col-span-8 lg:col-start-3">
               <div className="mb-16">
                 <Image
                   src={image04}
@@ -40,7 +40,9 @@ const HomeTemplate = (): ReactElement => {
                 around.
               </p>
             </div>
+          </div>
 
+          <div className="grid grid-cols-12 gap-12">
             <div className="col-span-6">
               <Image
                 src={image04}
@@ -62,7 +64,7 @@ const HomeTemplate = (): ReactElement => {
         </div>
       </div>
 
-      <div className="bg-gray-200 py-10 md:py-20 rounded-lg">
+      <div className="bg-gray-100 py-10 md:py-20 rounded-lg">
         <div className="container">
           <div className="md:grid md:grid-cols-12 md:gap-4 mb-16">
             <div className="md:col-span-8 md:col-start-3 text-center">
@@ -123,7 +125,7 @@ const HomeTemplate = (): ReactElement => {
       </div>
 
       <LazyLoad>
-        <div className="bg-lightest-gray py-10 md:py-20">
+        <div className="py-10 md:py-20">
           <div className="container">
             <div className="grid grid-cols-12 gap-12">
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 md:block">
@@ -152,10 +154,10 @@ const HomeTemplate = (): ReactElement => {
       </LazyLoad>
 
       <LazyLoad>
-        <div className="bg-lightest-gray py-10 md:py-20">
+        <div className="py-10 md:py-20">
           <div className="container">
             <div className="grid grid-cols-12 gap-12">
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 order-2">
+              <div className="relative col-span-12 md:col-span-6 md:row-span-2 lg:order-2">
                 <Image
                   src={image02}
                   alt="Image 02"
@@ -164,7 +166,7 @@ const HomeTemplate = (): ReactElement => {
                 />
               </div>
 
-              <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center order-1">
+              <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center lg:order-1">
                 <h4 className="text-4xl mb-8 text-navy-300 font-medium">
                   Where hanging out is easy
                 </h4>
@@ -181,7 +183,7 @@ const HomeTemplate = (): ReactElement => {
       </LazyLoad>
 
       <LazyLoad>
-        <div className="bg-lightest-gray py-10 md:py-20">
+        <div className="py-10 md:py-20">
           <div className="container">
             <div className="grid grid-cols-12 gap-12">
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 md:block">
@@ -210,10 +212,10 @@ const HomeTemplate = (): ReactElement => {
       </LazyLoad>
 
       <LazyLoad>
-        <div className="bg-lightest-gray py-10 md:py-20">
+        <div className="py-10 md:py-20">
           <div className="container text-center">
-            <div className="grid grid-cols-12 gap-12">
-              <div className="col-span-8 col-start-3">
+            <div className="lg:grid lg:grid-cols-12 lg:gap-12">
+              <div className="lg:col-span-8 lg:col-start-3">
                 <h4 className="text-4xl mb-8 text-navy-300 font-medium">
                   Reliable tech for staying close
                 </h4>

@@ -9,7 +9,7 @@ interface IPropType {
 
 const GuessLayout = ({ Component }: IPropType): ReactElement => {
   return (
-    <div className="bg-white p-4">
+    <div className="bg-gray-50">
       <HeaderComponent auth={false} />
 
       <Component />
