@@ -7,7 +7,3 @@ body {
 a {
   @apply transition duration-300 ease-in-out;
 }
-
-.full-screen {
-  height: calc(100vh - 96px);
-}
