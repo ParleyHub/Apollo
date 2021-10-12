@@ -218,10 +218,10 @@
   resolved "https://asia-npm.pkg.dev/parley-hub-project/parley-hub/@parley-hub/aeolus/-/@parley-hub/aeolus-1.0.3.tgz#fe6ccf8debbd966094cc0300794ccf60748e0079"
   integrity sha512-3eV/ZtaIlqaw/aS7Gx7YLb/w5gFRVYHA5eMXlxmZCvcDdEoRrV6fREExgT5LLxTGsNqQ3skJqTdGYslQB7lo7Q==
 
-"@parley-hub/grace@^1.0.1":
-  version "1.0.1"
-  resolved "https://asia-npm.pkg.dev/parley-hub-project/parley-hub/@parley-hub/grace/-/@parley-hub/grace-1.0.1.tgz#59cb7b8f9da79d5b76c4e3486aed79664a291bb9"
-  integrity sha512-x39IdC2pkmXWGsv3oXhyQmlChExZz/JvXwUIY27lA9hjhP4TC0qurcnq0kTGexUobsYGGd67FJsTo463elfxjg==
+"@parley-hub/grace@^1.0.2":
+  version "1.0.2"
+  resolved "https://asia-npm.pkg.dev/parley-hub-project/parley-hub/@parley-hub/grace/-/@parley-hub/grace-1.0.2.tgz#79724a9f6094736b991b1ffe003311b938b44b3b"
+  integrity sha512-4iZUqKS0PdY4Pq/5XbMN5iyEHYinHGNiBJr+a2AXvCNxG+odQoG4RoNFAaidf55TUJdPO50xveVmJirWnUrfjg==
 
 "@rushstack/eslint-patch@^1.0.6":
   version "1.0.7"

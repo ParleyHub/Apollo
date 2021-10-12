@@ -73,7 +73,9 @@ const HeaderAuthComponent = () => (
       </a>
     </Link>
 
-    <Input placeholder="Search" fullWidth inputSize="large" />
+    <div className="w-96 flex items-center">
+      <Input placeholder="Search" fullWidth />
+    </div>
 
     <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-500">
       John Doe
