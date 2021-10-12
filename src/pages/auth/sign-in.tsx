@@ -21,21 +21,23 @@ const SignInTemplate = (): ReactElement => {
         <div className="container">
           <div className="md:grid md:grid-cols-12 md:gap-8">
             <div className="md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-5">
-              <Input
-                className="mb-4"
-                placeholder="Email"
-                type="text"
-                inputSize="large"
-                fullWidth
-              />
+              <div className="mb-4">
+                <Input
+                  placeholder="Email"
+                  type="text"
+                  inputSize="large"
+                  fullWidth
+                />
+              </div>
 
-              <Input
-                className="mb-4"
-                placeholder="Password"
-                type="password"
-                inputSize="large"
-                fullWidth
-              />
+              <div className="mb-4">
+                <Input
+                  placeholder="Password"
+                  type="password"
+                  inputSize="large"
+                  fullWidth
+                />
+              </div>
 
               <Button label="Sign In" variant="info" size="large" fullWidth />
             </div>
