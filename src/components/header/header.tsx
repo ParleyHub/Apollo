@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 import { Input } from '@parley-hub/grace';
 import { ArrowDownIcon } from '@parley-hub/aeolus';
 
-import headerStyles from './header.module.scss';
-
 interface IHeaderProps {
   auth: boolean;
 }
@@ -20,11 +18,11 @@ const HeaderGuessComponent = () => {
     <div className="container flex justify-between items-center flex-col md:flex-row">
       <Link href="/">
         <a className="flex items-center mb-4 md:mb-0">
-          <div className={headerStyles.mainLogo}>
+          <div className="relative md:mr-4 w-10 h-10">
             <Image src={logo} alt="Parley Hub" layout="responsive" />
           </div>
 
-          <h1 className="hidden text-xl text-primary-600 font-medium md:inline-block">
+          <h1 className="hidden text-xl text-blue-500 font-medium md:inline-block">
             Parley Hub
           </h1>
         </a>
@@ -43,7 +41,7 @@ const HeaderGuessComponent = () => {
       <div className="flex">
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
-            router.pathname === '/auth/sign-up' ? 'text-primary-600' : ''
+            router.pathname === '/auth/sign-up' ? 'text-blue-500' : ''
           }`}
           onClick={() => router.push('/auth/sign-up')}
         >
@@ -54,7 +52,7 @@ const HeaderGuessComponent = () => {
 
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
-            router.pathname === '/auth/sign-in' ? 'text-primary-600' : ''
+            router.pathname === '/auth/sign-in' ? 'text-blue-500' : ''
           }`}
           onClick={() => router.push('/auth/sign-in')}
         >
@@ -75,20 +73,20 @@ const HeaderAuthComponent = () => (
       </a>
     </Link>
 
-    <Input placeholder="Search" fullWidth inputSize="small" />
+    <Input placeholder="Search" fullWidth inputSize="large" />
 
-    <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-primary-600">
+    <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-500">
       John Doe
       <ArrowDownIcon
         variant="default"
-        className="flex ml-1 transition duration-300 ease-in-out group-hover:text-primary-600"
+        className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-500"
       />
     </div>
   </div>
 );
 
 const HeaderComponent = ({ auth = false }: IHeaderProps): ReactElement => (
-  <header className="py-2 mb-4 border-b border-solid border-gray-200 bg-white">
+  <header className="border-b border-solid border-gray-200 bg-white flex h-16">
     {auth ? <HeaderAuthComponent /> : <HeaderGuessComponent />}
   </header>
 );

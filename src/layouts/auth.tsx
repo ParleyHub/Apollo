@@ -1,6 +1,7 @@
 import { ReactElement, FC } from 'react';
 
 import HeaderComponent from '../components/header';
+import SidebarComponent from '../components/sidebar';
 
 interface IPropType {
   Component: FC;
@@ -8,10 +9,14 @@ interface IPropType {
 
 const AuthLayout = ({ Component }: IPropType): ReactElement => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       <HeaderComponent auth={true} />
 
-      <Component />
+      <section className="flex flex-1">
+        <SidebarComponent />
+
+        <Component />
+      </section>
     </div>
   );
 };
