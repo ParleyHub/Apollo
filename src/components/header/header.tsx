@@ -79,10 +79,7 @@ const HeaderAuthComponent = () => (
 
     <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-500">
       John Doe
-      <ArrowDownIcon
-        variant="default"
-        className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-500"
-      />
+      <ArrowDownIcon className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-500" />
     </div>
   </div>
 );
