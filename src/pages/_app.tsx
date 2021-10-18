@@ -6,7 +6,7 @@ import type { AppProps } from 'next/app';
 import '@parley-hub/grace/lib/main.css';
 import '@parley-hub/aeolus/lib/main.css';
 
-import { store } from '../redux/store';
+import store from '../middleware/redux/store';
 
 import '../styles/styles.scss';
 
