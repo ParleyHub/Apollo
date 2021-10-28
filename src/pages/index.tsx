@@ -9,6 +9,7 @@ import image02 from '../../public/assets/images/home/image-02.svg';
 import image03 from '../../public/assets/images/home/image-03.svg';
 import image04 from '../../public/assets/images/home/image-04.svg';
 import image05 from '../../public/assets/images/home/image-05.svg';
+import image06 from '../../public/assets/images/home/image-06.svg';
 import image07 from '../../public/assets/images/home/image-07.svg';
 
 const HomeTemplate = (): ReactElement => {
@@ -20,8 +21,8 @@ const HomeTemplate = (): ReactElement => {
             <div className="lg:col-span-8 lg:col-start-3">
               <div className="mb-16">
                 <Image
-                  src={image04}
-                  alt="Image 04"
+                  src={image06}
+                  alt="Image 06"
                   objectFit="cover"
                   layout="responsive"
                 />
@@ -81,7 +82,7 @@ const HomeTemplate = (): ReactElement => {
 
           <div className="md:grid md:grid-rows-2 md:grid-cols-12 md:gap-4 items-center">
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-2 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 mb-2 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 mb-2 text-navy-300">
                 Channels
               </h4>
 
@@ -92,31 +93,31 @@ const HomeTemplate = (): ReactElement => {
             </div>
 
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 text-navy-300">
                 Message
               </h4>
             </div>
 
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 text-navy-300">
                 Voice and video calls
               </h4>
             </div>
 
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 text-navy-300">
                 Accessibility
               </h4>
             </div>
 
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 text-navy-300">
                 File sharing
               </h4>
             </div>
 
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-1 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-500 text-navy-300">
+              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 text-navy-300">
                 Security
               </h4>
             </div>
