@@ -7,3 +7,7 @@ body {
 a {
   @apply transition duration-300 ease-in-out;
 }
+
+#body {
+  height: calc(100vh - 112px);
+}
