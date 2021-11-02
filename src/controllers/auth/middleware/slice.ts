@@ -14,13 +14,13 @@ export const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    incrementByAmount: (state, action: PayloadAction<string>) => {
+    setToken: (state, action: PayloadAction<string>) => {
       state.token = action.payload;
       state.refreshToken = action.payload;
     },
   },
 });
 
-export const { incrementByAmount } = authSlice.actions;
+export const { setToken } = authSlice.actions;
 
 export default authSlice.reducer;

@@ -18,7 +18,7 @@ const HomeTemplate = (): ReactElement => {
       <div className="py-10 md:py-20">
         <div className="container text-center">
           <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-24 mb-16">
-            <div className="lg:col-span-8 lg:col-start-3">
+            <div className="col-span-12 lg:col-span-8 lg:col-start-3">
               <div className="mb-16">
                 <Image
                   src={image06}
@@ -82,9 +82,9 @@ const HomeTemplate = (): ReactElement => {
 
           <div className="md:grid md:grid-rows-2 md:grid-cols-12 md:gap-4 items-center">
             <div className="group transition duration-300 ease-in-out bg-white rounded-lg border border-solid border-gray-200 mb-4 py-4 px-6 row-span-2 md:col-span-6 md:mb-0 lg:col-span-3 hover:border-blue-500">
-              <h4 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 mb-2 text-navy-300">
+              <h3 className="transition duration-300 ease-in-out text-xl font-medium group-hover:text-blue-600 mb-2 text-navy-300">
                 Channels
-              </h4>
+              </h3>
 
               <p className="text-gray-600">
                 Stay organized and focused with central spaces for
@@ -139,7 +139,7 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center">
-                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-center text-3xl mb-8 text-navy-300 font-medium lg:text-4xl lg:text-left">
                   Create an invite-only place where you belong
                 </h4>
 
@@ -168,7 +168,7 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="relative col-span-12 md:col-span-6 md:row-span-2 flex flex-col justify-center lg:order-1">
-                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-center text-3xl mb-8 text-navy-300 font-medium lg:text-4xl lg:text-left">
                   Where hanging out is easy
                 </h4>
 
@@ -197,7 +197,7 @@ const HomeTemplate = (): ReactElement => {
               </div>
 
               <div className="relative md:col-span-6 md:row-span-2 flex flex-col justify-center">
-                <h4 className="text-3xl lg:text-4xl mb-8 text-navy-300 font-medium">
+                <h4 className="text-center text-3xl mb-8 text-navy-300 font-medium lg:text-4xl lg:text-left">
                   From few to a fandom
                 </h4>
 

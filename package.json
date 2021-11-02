@@ -17,7 +17,7 @@
     "gar": "npx google-artifactregistry-auth .npmrc"
   },
   "dependencies": {
-    "@parley-hub/aeolus": "^2.1.1",
+    "@parley-hub/aeolus": "^2.1.2",
     "@parley-hub/grace": "^1.0.2",
     "@reduxjs/toolkit": "^1.6.2",
     "axios": "^0.23.0",
