@@ -22,7 +22,7 @@ const HeaderGuessComponent = () => {
             <Image src={logo} alt="Parley Hub" layout="responsive" />
           </div>
 
-          <h1 className="hidden text-xl text-blue-500 font-medium md:inline-block">
+          <h1 className="hidden text-xl text-blue-600 font-medium md:inline-block">
             Parley Hub
           </h1>
         </a>
@@ -41,7 +41,7 @@ const HeaderGuessComponent = () => {
       <div className="flex">
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
-            router.pathname === '/auth/sign-up' ? 'text-blue-500' : ''
+            router.pathname === '/auth/sign-up' ? 'text-blue-600' : ''
           }`}
           onClick={() => router.push('/auth/sign-up')}
         >
@@ -52,7 +52,7 @@ const HeaderGuessComponent = () => {
 
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
-            router.pathname === '/auth/sign-in' ? 'text-blue-500' : ''
+            router.pathname === '/auth/sign-in' ? 'text-blue-600' : ''
           }`}
           onClick={() => router.push('/auth/sign-in')}
         >
@@ -77,12 +77,9 @@ const HeaderAuthComponent = () => (
       <Input placeholder="Search" fullWidth />
     </div>
 
-    <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-500">
+    <div className="flex text-gray-600 items-center cursor-pointer transition duration-300 ease-in-out group hover:text-blue-600">
       John Doe
-      <ArrowDownIcon
-        variant="default"
-        className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-500"
-      />
+      <ArrowDownIcon className="flex ml-1 transition duration-300 ease-in-out group-hover:text-blue-600" />
     </div>
   </div>
 );

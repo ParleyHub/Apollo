@@ -1,14 +1,18 @@
 import { ReactElement } from 'react';
+import { Provider } from 'react-redux';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+
 import '@parley-hub/grace/lib/main.css';
 import '@parley-hub/aeolus/lib/main.css';
+
+import store from '../middleware/redux/store';
 
 import '../styles/styles.scss';
 
 const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return (
-    <>
+    <Provider store={store}>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +27,7 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
       </Head>
 
       <Component {...pageProps} />
-    </>
+    </Provider>
   );
 };
 

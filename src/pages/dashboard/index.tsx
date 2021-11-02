@@ -1,3 +1,3 @@
-import DashboardPage from './_dashboard';
+import DashboardPage from '../../controllers/dashboard';
 
 export default DashboardPage;
