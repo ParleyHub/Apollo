@@ -28,16 +28,6 @@ const HeaderGuessComponent = () => {
         </a>
       </Link>
 
-      <nav className="text-gray-600 hidden md:flex font-medium">
-        <a href="#" className="mx-4 hover:underline">
-          Product
-        </a>
-
-        <a href="#" className="mx-4 hover:underline">
-          Features
-        </a>
-      </nav>
-
       <div className="flex">
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
