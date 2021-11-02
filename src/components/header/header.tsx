@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Input } from '@parley-hub/grace';
-import { ArrowDownIcon } from '@parley-hub/aeolus';
+import { ArrowDownIcon, BarsIcon } from '@parley-hub/aeolus';
 
 interface IHeaderProps {
   auth: boolean;
@@ -15,20 +15,22 @@ const HeaderGuessComponent = () => {
   const router = useRouter();
 
   return (
-    <div className="container flex justify-between items-center flex-col md:flex-row">
+    <div className="container flex items-center flex-row justify-between">
       <Link href="/">
-        <a className="flex items-center mb-4 md:mb-0">
-          <div className="relative md:mr-4 w-10 h-10">
+        <a className="flex items-center">
+          <div className="relative mr-4 w-10 h-10">
             <Image src={logo} alt="Parley Hub" layout="responsive" />
           </div>
 
-          <h1 className="hidden text-xl text-blue-600 font-medium md:inline-block">
-            Parley Hub
-          </h1>
+          <h1 className="text-xl text-blue-600 font-medium">Parley Hub</h1>
         </a>
       </Link>
 
-      <div className="flex">
+      <div className="flex items-center justify-center w-10 h-10 cursor-pointer">
+        <BarsIcon className="text-2xl leading-none flex" />
+      </div>
+
+      <div className="hidden md:flex">
         <span
           className={`text-gray-600 cursor-pointer hover:underline font-medium ${
             router.pathname === '/auth/sign-up' ? 'text-blue-600' : ''
