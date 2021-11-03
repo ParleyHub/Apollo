@@ -45,9 +45,9 @@ const NavigationGuessComponent = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <span
-        className={`text-gray-600 cursor-pointer hover:underline font-medium py-2 px-4 md:p-0 ${
+        className={`text-gray-600 cursor-pointer font-medium py-2 px-4 md:p-0 ${
           router.pathname === '/auth/sign-up'
-            ? 'bg-gray-100 rounded-lg text-blue-600'
+            ? 'bg-gray-100 rounded-lg text-blue-600 md:bg-transparent'
             : ''
         }`}
         onClick={() => router.push('/auth/sign-up')}
@@ -58,9 +58,9 @@ const NavigationGuessComponent = () => {
       <span className="hidden text-gray-600 mx-2 md:inline-block">/</span>
 
       <span
-        className={`text-gray-600 cursor-pointer hover:underline font-medium py-2 px-4 md:p-0 ${
+        className={`text-gray-600 cursor-pointer font-medium py-2 px-4 md:p-0 ${
           router.pathname === '/auth/sign-in'
-            ? 'bg-gray-100 rounded-lg text-blue-600'
+            ? 'bg-gray-100 rounded-lg text-blue-600 md:bg-transparent'
             : ''
         }`}
         onClick={() => router.push('/auth/sign-in')}
